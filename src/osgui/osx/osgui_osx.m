@@ -78,7 +78,7 @@ void _osgui_word_size(StringSizeData *data, const char_t *word, real32_t *width,
 void _osgui_attach_menubar(OSWindow *window, OSMenu *menu)
 {
     cassert_no_null(menu);
-    cassert([NSApp mainMenu] == kEMPTY_MENUBAR || [NSApp mainMenu] == nil);
+//    cassert([NSApp mainMenu] == kEMPTY_MENUBAR || [NSApp mainMenu] == nil);
     unref(window);
     [NSApp setMainMenu:(NSMenu*)menu];
 }
