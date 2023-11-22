@@ -89,7 +89,7 @@
 {
     unref(notification);
     if ([self isEnabled] == YES
-        && self->is_editing == YES
+//        && self->is_editing == YES
         && self->OnChange != NULL
         && _oswindow_in_destroy([self window]) == NO)
     {
