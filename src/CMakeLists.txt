@@ -39,5 +39,6 @@ commandApp("nrc" "utils/nrc" "core" NRC_NONE)
 
 # Your projects here!
 desktopApp("cerealtoo" "chris/cerealtoo" "osapp" NRC_EMBEDDED)
+desktopApp("picocgui" "chris/picocgui" "osapp" NRC_EMBEDDED)
 
 generateSolution()
