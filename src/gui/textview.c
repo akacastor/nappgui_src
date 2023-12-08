@@ -327,3 +327,13 @@ void _textview_dimension(TextView *view, const uint32_t i, real32_t *dim0, real3
     }
 }
 
+/*---------------------------------------------------------------------------*/
+
+const char_t *textview_get_text(TextView *view)
+{
+    cassert_no_null(view);
+    cassert_no_null(view->component.context);
+    cassert_no_nullf(view->component.context->func_text_get_text);
+    return view->component.context->func_text_get_text(view->component.ositem);
+}
+
